@@ -17,23 +17,24 @@
     font-family: var(--font-family);
 }
 
-.is-open {
+.mobile-menu.is-open {
     opacity: 1;
     pointer-events: all;
     visibility: visible;
+}
+
+.tablet-reserve-btn {
+    display: none;
 }
 
 .mobile-menu-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  padding: 0 12px 0 20px;
 }
 
 .mobile-close-button {
-    padding: 16px 17px;
-    margin: 8px 0;
+    padding: 24px 17px;
     line-height: 1;
 }
 
@@ -50,11 +51,12 @@
 }
 
 .mobile-nav-menu li{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
     width: 100%;
+}
 
+.mobile-nav-menu li a {
+    display: block;
     padding: 6.86px 0;
     font-weight: 400;
     font-size: 16px;
@@ -68,10 +70,6 @@
 
 .mobile-nav-menu > li:active {
     opacity: 0.8;
-}
-
-.mobile-menu-button {
-    margin: 0 auto;
 }
 
 .mobile-menu-reserve-btn {
@@ -91,6 +89,7 @@
     line-height: 1.5;
 
     color: rgb(255, 255, 255);
+    margin: 0 auto;
 }
 
 .mobile-menu-reserve-btn:hover {
@@ -103,16 +102,25 @@
     background-color: rgb(84, 6, 179);
 }
 
-@media (min-width: 768px) and (max-width: 1440px) {
-    .mobile-menu-button {
-        display: block;
-        position: absolute;
+@media (max-width: 374px) {
+    .mobile-menu-reserve-btn {
+        width: 100%;
+    }
+}
 
-        top: 16px;
-        right: 76px;
+@media (min-width: 768px) and (max-width: 1440px) {
+    .mobile-menu-reserve-btn  {
+        display: none;
+    }
+    .mobile-menu-actions-block {
+        display: flex;
+        align-items: center;
+        gap: 8px;
     }
 
-    .mobile-menu-reserve-btn {
+    .mobile-menu-reserve-btn.tablet-reserve-btn {
+        display: block;
+
         padding: 4px 20px;
         width: 200px;
         height: 32px;
@@ -122,8 +130,9 @@
 }
 
 @media (min-width: 1440px) {
-    .mobile-menu {
+    .mobile-menu,
+    .mobile-menu.is-open {
         pointer-events: none;
-    visibility: hidden;
+        visibility: hidden;
     }
 }
