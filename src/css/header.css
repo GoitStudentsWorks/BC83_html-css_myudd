@@ -30,9 +30,9 @@
 
 .header-btn {
     border-bottom: 4px solid rgb(84, 6, 179);
-    border-left: 1.50px solid var(--color-electric-violet-dark);
-    border-right: 1.50px solid var(--color-electric-violet-dark);
-    border-top: 1.50px solid var(--color-electric-violet-dark);
+    border-left: 1.50px solid rgb(84, 6, 179);
+    border-right: 1.50px solid rgb(84, 6, 179);
+    border-top: 1.50px solid rgb(84, 6, 179);
     border-radius: 12px;
     padding: 4px 20px;
     width: 200px;
@@ -45,6 +45,8 @@
     line-height: 1.5;
 
     color: rgb(255, 255, 255);
+
+    white-space: nowrap;
 }
 
 .header-btn:hover {
