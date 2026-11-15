@@ -135,7 +135,7 @@
     }
 
     .price-underhedline {
-        padding-inline: 50px;
+        padding: 0 91px;
     }
 
     .actual-price {
@@ -150,7 +150,7 @@
     }
 
     .price-card-list {
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
     }
 
     .price-card {
@@ -159,7 +159,7 @@
     }
 
     .price-underhedline {
-        padding-inline: 220px;
+        padding: 0 335px;
         font-size: 20px;
     }
 
