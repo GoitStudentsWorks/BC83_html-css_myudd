@@ -87,7 +87,7 @@
     width: calc((100% - 32px * 2) / 3);
   }
   .benefits-section {
-    background-image: url(../img/Ellipse-benefits.svg);
+    background-image: url(../img/benefits/Ellipse-benefits.svg);
     background-repeat: no-repeat;
     background-position: calc(50% + 496px) center;
   }

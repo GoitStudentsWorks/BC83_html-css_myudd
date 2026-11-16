@@ -2,8 +2,8 @@
     background-color: #1f0243;
     background-image: url("../img/price/Ellipse-price-mobile.svg");
     background-repeat: no-repeat;
-    background-position: center 25%;
-    background-size: cover;
+    background-position: center -250px;
+    background-size: auto;
 }
 
 .price-card-list {
@@ -118,7 +118,7 @@
 @media screen and (min-width: 768px) {
     .price {
         background-image: url("../img/price/Ellipse-price-tablet.svg");
-        background-position: center 35%;
+        background-position: 0 -20px;
     }
 
     .price-card-list {
@@ -146,7 +146,7 @@
 @media screen and (min-width: 1440px) {
     .price {
         background-image: url("../img/price/Ellipse-price-desktop.svg");
-        background-position: center 45%;
+        background-position: 0 10px;
     }
 
     .price-card-list {
@@ -161,6 +161,7 @@
     .price-underhedline {
         padding: 0 335px;
         font-size: 20px;
+        margin-bottom: 80px;
     }
 
     .price-card-headline {
