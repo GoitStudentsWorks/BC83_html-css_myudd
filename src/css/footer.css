@@ -1,4 +1,6 @@
 .footer {
+padding-top: 48px;
+padding-bottom: 48px;
 font-family: var(--font-family);
 background-color: #1f0243;
 background-image: url("../img/footer/footer-ellipse-mobile.svg");
@@ -12,8 +14,6 @@ display: flex;
 flex-direction: column;
 align-items: center;
 gap: 80px;
-padding-top: 48px;
-padding-bottom: 48px;
 }
 
 .footer-top {
@@ -206,13 +206,11 @@ height: 20px;
 
 @media screen and (min-width: 1440px) {
 .footer {
-background-image: url("../img/footer/footer-ellipse-desktop.svg");
-}
-
-.footer-container {
 padding-top: 80px;
 padding-bottom: 80px;
+background-image: url("../img/footer-ellipse-desktop.svg");
 }
+
 
 .footer-top {
 gap: 64px;
