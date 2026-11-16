@@ -68,6 +68,7 @@
 
 .reserve-form-error-text {
   display: none;
+  position: absolute;
   font-family: var(--font-family);
   font-size: 12px;
   line-height: 1.5;
@@ -139,13 +140,6 @@
 .reserve-radio-label:hover:has(.reserve-radio-btn:not(:checked)),
 .reserve-radio-label:focus-within:has(.reserve-radio-btn:not(:checked)) {
   color: #9652e9;
-}
-
-.reserve-radio-btn {
-  position: absolute;
-  opacity: 0;
-  height: 0;
-  width: 0;
 }
 
 .reserve-radio-btn:focus-visible ~ .reserve-custom-radio-btn {

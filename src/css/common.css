@@ -25,6 +25,18 @@ body{
     color: #fff;
     font-family: var(--second-font-family);
 }
+.sr-only {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(100%);
+    margin: -1px;
+}
 @media screen and (min-width: 320px) and (max-width:374px) {
     .container{
         width: 100%;
@@ -50,4 +62,14 @@ body{
     .section-headline{
         font-size: 54px;
     }
+    .benefits-box,
+    .games-card{
+        transition: transform 250ms linear, box-shadow 150ms linear;
+    }
+    .benefits-box:hover,
+    .games-card:hover{
+        transform: scale(102%);
+        box-shadow: 1px 1px 50px -1px #6a08e050;
+    }
 }
+
