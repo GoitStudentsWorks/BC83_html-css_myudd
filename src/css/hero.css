@@ -112,6 +112,11 @@
 .btn--secondary:active::after {
     border-color: transparent;
 }
+@media (min-width: 320px) and (max-width: 374px) {
+    .hero {
+        background-size: cover;
+    }
+}
 @media (min-width: 768px) {
     .hero {
         padding: 79px 0;
