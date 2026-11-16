@@ -1,64 +1,90 @@
-# Web Team Project Template
 
-Takım projeleri için bu şablon Vite kullanılarak oluşturulmuştur. Ek özelliklerin tanınması ve özelleştirilmesi için [belgelere bakın](https://vitejs.dev/).
+# Reality Shift Project by Team#2
 
-## Şablon kullanarak bir depo oluşturma
+Hazır bir tasarıma göre hazırlanmış, VR kulübü için tanıtım amaçlı açılış sayfası (landing page). 
 
-Projeniz için bir depo oluşturmak üzere bu depoyu şablon olarak kullanın. Bunu yapmak için, `«Use this template»` düğmesine tıklayın ve resimde gösterildiği gibi `«Create a new repository»` seçeneğini seçin.
+- Arayüz dili: Ukraynaca
+- Uyumluluk: 375 px, 768 px, 1440 px (Figma'da hazırlanmış hazır tasarımlar)
 
-![Creating repo from a template step 1](./assets/template-step-1.png)
 
-Bir sonraki adımda yeni bir depo oluşturma sayfası açılır. Ad alanını doldurun, deponun herkese açık olduğundan emin olun ve ardından `«Create repository from template»` düğmesine tıklayın.
+## Teknolojiler
 
-![Creating repo from a template step 2](./assets/template-step-2.png)
+ - HTML5 
+ - CSS3 (Flexbox, değişkenler)
+ - JS (olay dinleyicileri ve stiller) 
+ - Git / GitHub 
+ - Figma 
+ - GitHub Pages
 
-Depo oluşturulduktan sonra onun için GitHub Pages'i etkinleştirin: `Settings` > `Pages` bölümüne gidin ve `Build and deployment` kısmında `Source` → `GitHub Actions` seçeneğini seçin. Bu, tek seferlik bir ayardır.
 
-![GitHub Pages: Source → GitHub Actions](./assets/repo-settings.jpg)
+## Sayfa yapısı
 
-Artık depo şablonu dosyası ve klasör yapısına sahip kişisel bir proje deponuz var. Daha sonra diğer kişisel depolarla yaptığınız gibi onunla çalışın.
-Bilgisayarınıza klonlayın, kod yazın, taahhütlerde bulunun ve bunları GitHub'a gönderin.
 
-## İş için hazırlanma
 
-1. Bilgisayarınızda Node.js'nin LTS sürümünün yüklü olduğundan emin olun. Gerekirse [Download and install](https://nodejs.org/en/).
-2. Projenin temel bağımlılıklarını terminalde `npm install` komutu ile yükleyin.
-3. Terminalde `npm run dev` komutunu çalıştırarak geliştirme modunu başlatın.
-4. Tarayıcınızda [http://localhost:5173](http://localhost:5173) adresine gidin. Proje dosyalarındaki değişiklikleri kaydettikten sonra bu sayfa otomatik olarak yeniden yüklenecektir.
+- Header 
+- Hero 
+- Hakkımızda ve oyunlar 
+- Avantajlar 
+- Fiyatlar 
+- Rezervasyon formu 
+- Galeri 
+- Yorumlar 
+- Footer
 
-## Dosyalar ve klasörler
+## Etkileşimli öğeler
 
-- Kendi JavaScript kodunu `src/main.js` dosyasına ve gerektiğinde oluşturacağın diğer dosyalara yaz.
-- Sayfa bileşeni biçimlendirme dosyaları `src/partials` klasöründe bulunmalı ve `index.html` dosyasına aktarılmalıdır. Örneğin, başlık biçimlendirme dosyası `header.html` `partials` klasöründe oluşturulur ve `index.html` dosyasına aktarılır.
-- Stil dosyaları `src/css` klasöründe bulunmalı ve sayfaların HTML dosyalarına bağlanmalıdır. Örneğin, `index.html` `./css/styles.css` dosyasını bağlar.
-- Görüntüleri `src/img` klasörüne eklersiniz. Oluşturucu bunları optimize eder, ancak yalnızca projenin üretim sürümü dağıtıldığında. Tüm bunlar bulutta gerçekleşir, böylece bilgisayarınıza yük olmaz, çünkü zayıf makinelerde uzun zaman alabilir.
+- Tüm bağlantılar üzerine gelindiğinde metin rengini değiştirir;
+- Tüm düğmeler üzerine gelindiğinde arka plan rengini değiştirir;
+- Sayfa yüklemesi "smooth" olarak uygulanmıştır;
+- "Hakkımızda" ve "Avantajlar" bölümlerinin kartları üzerine gelindiğinde büyüme ve gölge efektlerine sahiptir;
+- "Galeri" bölümünün ana görseli tıklandığında değişir;
+- "Yorumlar" bölümünün kartlarının üzerine gelindiğinde etkileşimli vurgulama efekti belirir;
+- Mobil menü ilgili düğmeler yardımıyla açılır ve kapanır.
+## Teknik gereksinimler
 
-## Dağıtım
+- [x] Sayfa düzeni, mobil cihazlar hariç, uyumludur. Kırılma noktaları:
+  - **mobile:** 320 px'ten itibaren akışkan düzen, 375 px'ten itibaren uyarlanabilir hale gelir
+  - **tablet:** 768 px'ten itibaren
+  - **desktop:** 1440 px'ten itibaren
+- [x] Sayfa düzeni geçerlidir ([W3C HTML Validator](https://validator.w3.org/), [W3C CSS Validator](https://jigsaw.w3.org/css-validator/))
+- [x] HTML5 standartlarına uygun semantik kullanılmıştır
+- [x] Yazı tipleri bağlanmıştır
+- [x] Vektörel ve rastersel grafiklerin boyutları optimize edilmiştir
+- [x] Retina ekranlar için görsellerin gösterimi desteklenir
+- [x] Görseller optimize edilmiş şekilde yüklenir
+- [x] Tüm SVG simgeleri sprite üzerinden bağlanmıştır
+- [x] Sayfa favicon'u eklenmiştir
+- [x] Tıklanabilir öğelerin efektleri UI Kit'e uygun şekilde stillendirilmiştir; `hover` için imleç değişimi eklenmiştir
+## Ekibimiz
+- [@vladbondarenko09](https://www.github.com/vladbondarenko09)
+- [@andrii-borysiak](https://www.github.com/andrii-borysiak)
+- [@kvoytikh](https://www.github.com/kvoytikh)
+- [@alekseypr6548-hu](https://www.github.com/alekseypr6548-hub)
+- [@DmytroPempus](https://www.github.com/DmytroPempus)
+- [@tskitsune](https://www.github.com/tskitsune)
+- [@tetiana8989](https://www.github.com/tetiana8989)
+- [@myudd](https://www.github.com/myudd)
 
-Sayfanın canlı sürümü otomatik olarak güncellenir: proje dosyalarını her değiştirip değişiklikleri GitHub'da `main` dalına gönderdiğinde (doğrudan push ile veya kabul edilen bir pull request ile), proje kendini yeniden derler ve GitHub Pages'te yayımlar.
 
-### Dağıtım durumu
 
-Son işlemin dağıtım durumu, tanımlayıcısının yanındaki simge ile gösterilir.
+## Depo ile nasıl çalışılır
 
-- **Sarı renk** — proje inşa ediliyor ve dağıtılıyor.
-- **Yeşil renk** — dağıtım başarıyla tamamlandı.
-- **Kırmızı renk** — oluşturma veya dağıtma sırasında bir hata oluştu.
+main dalı korumalıdır, doğrudan push yasaktır.
 
-Durum hakkında daha ayrıntılı bilgi, simgeye tıklayarak ve açılan pencerede `Details` bağlantısına tıklayarak görüntülenebilir.
+```bash
+git clone git@github.com:myudd/RealityShift_by_team2.git
+cd RealityShift_by_team2
 
-![Deployment status](./assets/deploy-status.png)
+git switch -c feature/bölüm-adı     # 1. kendi dalınız
+git add .
+git commit -m "feat: oyunlar bölümü eklendi" # 2. commit işlemleri
+git push -u origin feature/bölüm-adı  # 3. dalı gönderin
+```
+Ardından GitHub'da: Pull Request → başka bir katılımcının incelemesi → Merge.
 
-### Canlı sayfa
+Çalışmaya başlamadan önce main dalını her zaman güncelleyin:
 
-Bir süre sonra, genellikle birkaç dakika içinde, canlı sayfa senin deponun `Settings` > `Pages` sekmesinde belirtilen adresten görüntülenebilir. Örneğin, bu şablon deposunun canlı sürümünün bağlantısı şöyledir — sende kendi bağlantın olacak:
+```bash
+git switch main && git pull
+```
 
-[https://goitacademy.github.io/web-team-project-template/](https://goitacademy.github.io/web-team-project-template/).
-
-Boş bir sayfa açılırsa, GitHub Pages'in etkin olduğundan (`Settings` > `Pages`) ve `Actions` sekmesindeki son dağıtımın başarıyla (yeşil) tamamlandığından emin ol.
-
-## Nasıl çalışır
-
-![How it works](./assets/how-it-works.png)
-
-Kaputun altında: `main` dalına push yapıldıktan sonra `.github/workflows/deploy.yml` dosyasındaki bir GitHub Action çalışır, projeyi derler ve GitHub Pages'te yayımlar. Bir şeyler ters giderse — ayrıntılar `Actions` sekmesinde.
