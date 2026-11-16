@@ -50,4 +50,14 @@ body{
     .section-headline{
         font-size: 54px;
     }
+    .benefits-box,
+    .games-card{
+        transition: transform 250ms linear, box-shadow 150ms linear;
+    }
+    .benefits-box:hover,
+    .games-card:hover{
+        transform: scale(102%);
+        box-shadow: 1px 1px 50px -1px #6a08e050;
+    }
 }
+
