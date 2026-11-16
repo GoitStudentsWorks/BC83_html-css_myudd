@@ -7,20 +7,26 @@
 
     pointer-events: none;
     visibility: hidden;
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
 
     background-color: rgb(31, 2, 67);
     z-index: 9999;
 
     font-family: var(--font-family);
+
+    transition: opacity 250ms linear;
 }
+
 
 .mobile-menu.is-open {
     opacity: 1;
     pointer-events: all;
     visibility: visible;
+}
+
+.mobile-menu > .container {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
 }
 
 .tablet-reserve-btn {
@@ -35,6 +41,11 @@
 
 .mobile-close-button {
     padding: 24px 17px;
+
+    border: none;
+    background: transparent;
+    cursor: pointer;
+
     line-height: 1;
 }
 
@@ -87,7 +98,7 @@
     font-weight: 600;
     font-size: 16px;
     line-height: 1.5;
-
+    text-align: center;
     color: rgb(255, 255, 255);
     margin: 0 auto;
 }
@@ -123,7 +134,7 @@
 
         padding: 4px 20px;
         width: 200px;
-        height: 32px;
+        height: 36px;
 
         white-space: nowrap;
     }
