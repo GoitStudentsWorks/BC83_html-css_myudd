@@ -1,91 +1,90 @@
-# Web Team Project Template
 
-Ten szablon do projektów zespołowych został zbudowany przy użyciu Vite. Aby zapoznać się i skonfigurować
-dodatkowe funkcje [zapoznaj się z dokumentacją](https://vitejs.dev/).
+# Reality Shift Project by Team#2
 
-## Tworzenie repozytorium za pomocą szablonu
+Landing page – wizytówka klubu VR wykonana według gotowego projektu. 
 
-Użyj tego repozytorium jako szablonu, aby utworzyć repozytorium dla swojego
-projektu. By to zrobić, kliknij przycisk `«Use this template»` i wybierz opcję
-`«Create a new repository»`, jak pokazano na obrazku.
+- Język interfejsu: ukraiński
+- Responsywność: 375 px, 768 px, 1440 px (gotowe makiety przygotowane w Figmie)
 
-![Creating repo from a template step 1](./assets/template-step-1.png)
 
-Na kolejnym etapie otworzy się strona tworzenia nowego repozytorium. Wypełnij
-pole nazwy, upewnij się, że repozytorium jest publiczne, a następnie kliknij
-przycisk `«Create repository from template»`.
+## Technologie
 
-![Creating repo from a template step 2](./assets/template-step-2.png)
+ - HTML5 
+ - CSS3 (Flexbox, zmienne)
+ - JS (nasłuchiwanie zdarzeń i style) 
+ - Git / GitHub 
+ - Figma 
+ - GitHub Pages
 
-Po utworzeniu repozytorium włącz dla niego GitHub Pages: przejdź do
-`Settings` > `Pages` i w sekcji `Build and deployment` wybierz `Source` →
-`GitHub Actions`. To jedyne jednorazowe ustawienie.
 
-![GitHub Pages: Source → GitHub Actions](./assets/repo-settings.jpg)
+## Struktura strony
 
-Teraz masz osobiste repozytorium projektu ze strukturą plików i folderów
-repozytorium wzorcowego. Pracuj z nim tak, jak z każdym innym osobistym
-repozytorium: klonuj je na swój komputer, pisz kod, dokonuj zatwierdzeń i
-przesyłaj je do GitHub.
 
-## Przygotowanie do pracy
 
-1. Upewnij się, że na komputerze zainstalowana jest wersja LTS Node.js.
-   [W razie potrzeby pobierz ją i zainstaluj](https://nodejs.org/en/).
-2. Zainstaluj podstawowe zależności projektu w terminalu za pomocą polecenia `npm install`.
-3. Uruchom tryb deweloperski, uruchamiając polecenie `npm run dev`.
-4. Wejdź na stronę [http://localhost:5173](http://localhost:5173) w przeglądarce. Strona
-   ta zostanie automatycznie przeładowana po zapisaniu zmian w plikach projektu.
+- Header 
+- Hero 
+- O nas i gry 
+- Zalety 
+- Cennik 
+- Formularz rezerwacji 
+- Galeria 
+- Opinie 
+- Footer
 
-## Pliki i foldery
+## Elementy interaktywne
 
-- Swój kod JavaScript pisz w `src/main.js` oraz w innych plikach, które utworzysz w razie potrzeby.
-- Pliki znaczników dla komponentów strony powinny być umieszczone w folderze `src/partials` i
-  zaimportowane do pliku `index.html`. Na przykład, plik ze znacznikami nagłówka
-  `header.html` należy utworzyć w folderze `partials` i zaimportować do `index.html`.
-- Pliki stylów powinny być umieszczone w folderze `src/css` i podłączane do plików HTML
-  stron. Na przykład `index.html` podłącza `./css/styles.css`.
-- Obrazy należy dodawać do folderu `src/img`. Konstruktor zoptymalizuje je, ale dopiero po
-  wdrożeniu produkcyjnej wersji projektu. Wszystko to dzieje się w chmurze, aby nie
-  obciążać Twojego komputera, ponieważ na słabych komputerach może to zająć dużo czasu.
+- Wszystkie linki zmieniają kolor tekstu po najechaniu kursorem;
+- Wszystkie przyciski zmieniają kolor tła po najechaniu kursorem;
+- Ładowanie strony zostało zaimplementowane w trybie "smooth";
+- Karty sekcji "O nas" i "Zalety" mają efekty powiększenia i cienia po najechaniu kursorem;
+- Główne zdjęcie sekcji "Galeria" zmienia się po kliknięciu;
+- Po najechaniu kursorem na karty sekcji "Opinie" pojawia się interaktywny efekt podświetlenia;
+- Menu mobilne pojawia się i znika za pomocą odpowiednich przycisków.
+## Wymagania techniczne
 
-## Wdrożenie
+- [x] Układ jest responsywny, z wyjątkiem urządzeń mobilnych. Punkty przełamania:
+  - **mobile:** układ płynny od 320 px, staje się adaptacyjny od 375 px
+  - **tablet:** od 768 px
+  - **desktop:** od 1440 px
+- [x] Układ jest poprawny pod względem walidacji ([W3C HTML Validator](https://validator.w3.org/), [W3C CSS Validator](https://jigsaw.w3.org/css-validator/))
+- [x] Zachowanie semantyki zgodnie ze standardami HTML5
+- [x] Podłączenie czcionek
+- [x] Optymalizacja rozmiarów grafiki wektorowej i rastrowej
+- [x] Obsługa wyświetlania obrazów na ekranach retina
+- [x] Zoptymalizowane ładowanie obrazów
+- [x] Wszystkie ikony SVG są podłączone przez sprite
+- [x] Dodano favicon strony
+- [x] Efekty elementów klikalnych są stylizowane zgodnie z UI Kit; dla `hover` dodano zmianę kursora
+## Nasz zespół
+- [@vladbondarenko09](https://www.github.com/vladbondarenko09)
+- [@andrii-borysiak](https://www.github.com/andrii-borysiak)
+- [@kvoytikh](https://www.github.com/kvoytikh)
+- [@alekseypr6548-hu](https://www.github.com/alekseypr6548-hub)
+- [@DmytroPempus](https://www.github.com/DmytroPempus)
+- [@tskitsune](https://www.github.com/tskitsune)
+- [@tetiana8989](https://www.github.com/tetiana8989)
+- [@myudd](https://www.github.com/myudd)
 
-Wersja live strony aktualizuje się automatycznie: za każdym razem, gdy zmieniasz
-pliki projektu i wysyłasz zmiany na GitHub do gałęzi `main` (bezpośrednim pushem
-lub przez zaakceptowany pull request), projekt sam się przebudowuje i publikuje
-na GitHub Pages.
 
-### Status wdrożenia
 
-Status wdrożenia ostatniego zatwierdzenia jest wyświetlany za pomocą ikony obok jego identyfikatora.
+## Jak pracować z repozytorium
 
-- **Żółty** - projekt jest budowany i wdrażany.
-- **Zielony** - wdrożenie zakończyło się pomyślnie.
-- **Czerwony** - wystąpił błąd podczas budowania lub wdrażania.
+Gałąź main jest chroniona, bezpośredni push jest zabroniony.
 
-Bardziej szczegółowe informacje na temat statusu można wyświetlić, klikając ikonę,
-a następnie link `Details` znajdujący się w rozwijanym oknie.
+```bash
+git clone git@github.com:myudd/RealityShift_by_team2.git
+cd RealityShift_by_team2
 
-![Deployment status](./assets/deploy-status.png)
+git switch -c feature/nazwa-sekcji     # 1. własna gałąź
+git add .
+git commit -m "feat: dodano sekcję gier" # 2. commity
+git push -u origin feature/nazwa-sekcji  # 3. push gałęzi
+```
+Dalej na GitHub: Pull Request → recenzja innego uczestnika → Merge.
 
-### Strona na żywo
+Przed rozpoczęciem pracy zawsze aktualizuj main:
 
-Po pewnym czasie, zwykle kilku minutach, stronę na żywo można zobaczyć pod
-adresem podanym w zakładce `Settings` > `Pages` w ustawieniach Twojego
-repozytorium. Dla przykładu, oto link do wersji live tego repozytorium-szablonu —
-u Ciebie będzie własny:
+```bash
+git switch main && git pull
+```
 
-[https://goitacademy.github.io/web-team-project-template/](https://goitacademy.github.io/web-team-project-template/).
-
-Jeśli otworzy się pusta strona, sprawdź, czy GitHub Pages jest włączone
-(`Settings` > `Pages`) i czy ostatnie wdrożenie w zakładce `Actions` zakończyło
-się pomyślnie (na zielono).
-
-## Jak to działa
-
-![How it works](./assets/how-it-works.png)
-
-Pod maską: po pushu do `main` uruchamia się GitHub Action z
-`.github/workflows/deploy.yml`, który buduje projekt i publikuje go na GitHub
-Pages. Jeśli coś pójdzie nie tak — szczegóły znajdziesz w zakładce `Actions`.
