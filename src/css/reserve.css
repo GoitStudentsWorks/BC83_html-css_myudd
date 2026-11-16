@@ -142,13 +142,6 @@
   color: #9652e9;
 }
 
-.reserve-radio-btn {
-  position: absolute;
-  opacity: 0;
-  height: 0;
-  width: 0;
-}
-
 .reserve-radio-btn:focus-visible ~ .reserve-custom-radio-btn {
   outline: 1px solid #fff;
 }
