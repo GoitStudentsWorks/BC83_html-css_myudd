@@ -1,0 +1,179 @@
+.price {
+    background-color: #1f0243;
+    background-image: url("../img/price/Ellipse-price-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: center -250px;
+    background-size: auto;
+}
+
+.price-card-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.section-headline-price {
+    margin-bottom: 24px;
+}
+
+.price-underhedline {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.price-card {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    width: 335px;
+    max-width: 100%;
+    padding: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    background-color: #2a0359;
+    transition: background-color 250ms ease;
+}
+
+.price-card-intro {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.price-card-headline {
+    font-family: var(--second-font-family);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.1;
+    letter-spacing: -0.01em;
+    text-align: center;
+}
+
+.actual-price {
+    font-family: var(--second-font-family);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1;
+    letter-spacing: -0.01em;
+    text-align: center;
+}
+
+.price-proposition-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.price-proposition {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.price-proposition-text {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.icon-check {
+    flex-shrink: 0;
+    fill: currentColor;
+}
+
+.sturt-game-buton {
+    display: block;
+    align-self: center;
+    width: 100%;
+    max-width: 303px;
+    min-height: 44px;
+    margin-top: auto;
+    padding: 10px 24px;
+    border: 1.5px solid #5406b3;
+    border-bottom: 4px solid #5406b3;
+    border-radius: 12px;
+    background-color: #6a08e0;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    transition: background-color 250ms ease, border-color 250ms ease;
+}
+
+.sturt-game-buton:hover,
+.sturt-game-buton:focus {
+    background-color: #5406b3;
+    border-color: #2a0359;
+}
+
+@media screen and (min-width: 768px) {
+    .price {
+        background-image: url("../img/price/Ellipse-price-tablet.svg");
+        background-position: 0 -20px;
+    }
+
+    .price-card-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: stretch;
+        justify-content: center;
+        gap: 24px;
+    }
+
+    .price-card {
+        width: 340px;
+        padding: 24px;
+    }
+
+    .price-underhedline {
+        padding: 0 91px;
+    }
+
+    .actual-price {
+        font-size: 48px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .price {
+        background-image: url("../img/price/Ellipse-price-desktop.svg");
+        background-position: 0 10px;
+    }
+
+    .price-card-list {
+        flex-wrap: wrap;
+    }
+
+    .price-card {
+        width: 310px;
+        padding: 32px;
+    }
+
+    .price-underhedline {
+        padding: 0 335px;
+        font-size: 20px;
+        margin-bottom: 80px;
+    }
+
+    .price-card-headline {
+        font-size: 26px;
+    }
+
+    .actual-price {
+        font-size: 64px;
+    }
+
+    .price-proposition-text,
+    .sturt-game-buton {
+        font-size: 18px;
+    }
+}
