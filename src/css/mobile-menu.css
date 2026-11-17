@@ -78,7 +78,11 @@
 .mobile-nav-menu > li > a:focus {
     opacity: 0.5;
 }
-
+.mobile-menu-logo{
+    line-height: 1;
+    display: block;
+    padding: 0;
+}
 .mobile-nav-menu > li:active {
     opacity: 0.8;
 }
@@ -127,6 +131,9 @@
         display: flex;
         align-items: center;
         gap: 8px;
+    }
+    .mob-btn{
+        display: none;
     }
 
     .mobile-menu-reserve-btn.tablet-reserve-btn {
